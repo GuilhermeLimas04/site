@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "ant";
+    src: url();
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
+    background-color: #044E66;
+    background-image: url(imagens/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#principal{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding-bottom: 25px;
+    
+}
+nav{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#sub{
+    color: white;
+    padding-bottom: 35px;
+}
+nav > a{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    
+}
+nav >a:active{
+    color: red;
+}
+nav > a:hover {
+    text-decoration: underline;
+    background-color: black;
+    border-radius: 10px;
+    transition-duration: 1s;
+    content: '•';
+}
+nav > a::after{
+    content: '•';
+}
+nav > a::before{
+    content: '•';
+}
+header{
+    background-image: linear-gradient(to top,#044E66,#0F8AB3);
+    border: solid;
+    min-height: 150px;
+    padding-top: 25px;
+    
+}
+
+header > p{
+    text-align: center;
+    font-size: 1.3em;
+}
+.article{
+    border-radius: 15px;
+}
+.title{
+    background-image: linear-gradient(to right,#0F8AB3,white);
+    color: white;
+    width: 785px;
+    padding: 5px;
+    width: 100%;
+    text-shadow: 
+    0.025em 0.025em 0 rgb(245, 245, 245),
+    0.05em 0.05em 0 rgb(119, 0, 255),
+    0.075em 0.075em 0 rgb(255, 60, 0),
+    0.1em 0.1em 0 rgb(5, 1, 63)
+}
+.container{
+    display: flex;    
+}
+@media (max-width: 764px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+.elemento{
+    padding: 25px;
+}
+
+.textarea{
+    border-radius: 10px;
+    background-color:aliceblue;
+    font-size: 16px;
+}
+.submit{
+    background-color: aliceblue;
+    width: 50px;
+    border-radius: 10px;
+}
+
+
+main{
+    background-color: white;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    border: solid;
+    
+    
+    
+}
+img{
+    border-radius: 25px;
+    width: 350px;
+    height: 298px;
+    margin: auto; 
+    display: inline-block; 
+}
+.cent{
+    display: flex;
+    justify-content: center;
+}
+.pai{
+    position: relative;
+    padding-top: 100px;
+    background-color:#0F8AB3;
+    border-radius: 25px; 
+    width: 700px;
+    margin: auto;
+    height: 350px;
+    min-width: 300px;
+    width: 100%;
+    
+    
+}
+.filho{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+}
+ol{
+    padding: 35px;
+}
+ul{
+    padding: 35px;
+}
